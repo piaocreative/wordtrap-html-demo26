@@ -1,0 +1,98 @@
+/* ----------------------------------------------------------------
+	Extra Styles
+-----------------------------------------------------------------*/
+.container-fluid {
+	overflow: hidden;
+}
+
+.slick-dots {
+	display: flex;
+	left: 2.5rem;
+    bottom: -2rem;
+
+	@include media-breakpoint-down(lg) {
+		display: none;
+	}
+}
+
+.slick-slide {
+	height: auto;
+}
+
+.slick-track {
+	@include media-breakpoint-down(lg) {
+		margin: 0 !important;
+	}
+}
+
+.arrows {
+	position: absolute;
+    left: 3rem;
+    bottom: 0;
+    min-width: 12rem;
+	max-width: 12rem;
+
+	a {
+		font-size: 1.5rem;
+	}
+
+	@include media-breakpoint-down(xxl) {
+		display: none !important;
+	}
+}
+
+.bestsellers {
+	.slick-track {
+		margin-left: -4rem;
+	}
+
+	.slick-dots {
+		left: -26.5rem;
+		bottom: -2rem;
+	}
+}
+
+.top-product {
+	.slick-track {
+		margin-left: 4rem;
+	}
+
+	.slick-dots {
+		left: 6.5rem;
+		bottom: -2rem;
+	}
+}
+
+.portfolios {
+	.slick-dots {
+		left: 5rem;
+		bottom: 0;
+	}
+}
+
+.pagenation {
+	position: absolute;
+    bottom: 2rem;
+    left: 7rem;
+
+	@include media-breakpoint-down(lg) {
+		display: none;
+	}
+}
+
+.about-more {
+	@include media-breakpoint-up(lg) {
+		position: absolute;
+		top: 18vh;
+		right: -3rem;
+	}
+}
+
+.history-image {
+	@include media-breakpoint-up(lg) {
+		position: absolute;
+		right: 0;
+		top: 13rem;
+		z-index: -1;
+	}
+}
